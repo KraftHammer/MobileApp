@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="White">#FFFFFFFF</color>
+    <color name="VeryLightGreen">#CEECB6</color>
     <color name="LightGreen">#9FCA45</color>
     <color name="Pear">#649D33</color>
     <color name="Pickle">#507D2A</color>

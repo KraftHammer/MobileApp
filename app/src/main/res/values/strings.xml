@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">ZenFlow</string>
+    <string name="button">Войти</string>
+    <string name="login">Логин</string>
+    <string name="password">Пароль</string>
+    <string name="zenflow">ZenFlow</string>
 </resources>
