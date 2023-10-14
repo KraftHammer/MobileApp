@@ -17,8 +17,9 @@
         app:layout_constraintStart_toStartOf="parent"></LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Main_Menu_BlockList"
         android:layout_width="409dp"
         android:layout_height="771dp"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="1dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
