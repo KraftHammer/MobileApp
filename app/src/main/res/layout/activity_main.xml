@@ -24,7 +24,7 @@
         <LinearLayout
             android:layout_width="342dp"
             android:layout_height="392dp"
-            android:alpha="0.8"
+            android:alpha="1"
             android:background="@drawable/radius_for_linearlayout"
             android:orientation="vertical">
 
@@ -42,7 +42,7 @@
                 android:textStyle="bold" />
 
             <EditText
-                android:id="@+id/editTextText"
+                android:id="@+id/editTextLogin"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="27dp"
@@ -50,7 +50,6 @@
                 android:layout_marginBottom="22dp"
                 android:background="@drawable/radius_for_edittext"
                 android:ems="10"
-                android:alpha=""
                 android:fontFamily="@font/abeezee"
                 android:hint="@string/login"
                 android:inputType="text"
@@ -59,10 +58,10 @@
                 android:paddingBottom="17dp"
                 android:textColorHint="#1B5E20"
                 tools:ignore="RtlSymmetry,TextContrastCheck"
-                android:autofillHints="" />
+                />
 
             <EditText
-                android:id="@+id/editTextTextPassword"
+                android:id="@+id/editTextPassword"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="27dp"
@@ -81,7 +80,7 @@
                 android:autofillHints="" />
 
             <Button
-                android:id="@+id/button"
+                android:id="@+id/btn_to_menu"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="27dp"
@@ -100,7 +99,7 @@
         </LinearLayout>
 
         <TextView
-            android:id="@+id/textView2"
+            android:id="@+id/btn_to_reg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Зарегистрироваться"
