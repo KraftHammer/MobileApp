@@ -6,7 +6,215 @@
     android:layout_height="match_parent"
     tools:context=".main_menu"
     android:background="@drawable/background_auth">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="MissingConstraints">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="13dp"
+                android:layout_weight="1"
+                android:background="@drawable/blocks_main_menu"
+                tools:ignore="ExtraText">
+
+                <ImageView
+                    android:id="@+id/Main_menu_imageView1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp" />
+                />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Main_menu_textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="75dp"
+                        android:gravity="center"
+                        android:text="Справочник"
+                        android:textColor="@color/White" />
+
+                    <Button
+                        android:id="@+id/Main_menu_button1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="14dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Button" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="13dp"
+                android:layout_weight="1"
+                android:background="@drawable/blocks_main_menu"
+                tools:ignore="ExtraText">
+
+                <ImageView
+                    android:id="@+id/Main_menu_imageView2"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp" />
+                />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Main_menu_textView2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="75dp"
+                        android:gravity="center"
+                        android:text="Справочник"
+                        android:textColor="@color/White" />
+
+                    <Button
+                        android:id="@+id/Main_menu_button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="14dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Button" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="7dp"
+                android:layout_marginTop="21dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="13dp"
+                android:layout_weight="1"
+                android:background="@drawable/blocks_main_menu"
+                tools:ignore="ExtraText">
+
+                <ImageView
+                    android:id="@+id/Main_menu_imageView3"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp" />
+                />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Main_menu_textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="75dp"
+                        android:gravity="center"
+                        android:text="Справочник"
+                        android:textColor="@color/White" />
+
+                    <Button
+                        android:id="@+id/Main_menu_button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="14dp"
+                        android:layout_marginBottom="20dp"
+                        android:text="Button" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginTop="21dp"
+                android:layout_marginLeft="7dp"
+                android:layout_marginRight="7dp"
+                android:layout_marginBottom="13dp"
+                android:background="@drawable/blocks_main_menu"
+                tools:ignore="ExtraText">
+
+                <ImageView
+                    android:id="@+id/Main_menu_imageView4"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    />
+                />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Main_menu_textView4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="75dp"
+                        android:textColor="@color/White"
+                        android:gravity="center"
+                        android:text="Справочник" />
+
+                    <Button
+                        android:id="@+id/Main_menu_button4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="14dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginTop="20dp"
+                        android:text="Button" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="118dp"
@@ -14,12 +222,8 @@
         android:background="@drawable/radius_for_panel_in_main_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"></LinearLayout>
+        app:layout_constraintStart_toStartOf="parent">
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/Main_Menu_BlockList"
-        android:layout_width="409dp"
-        android:layout_height="771dp"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
