@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".main_menu"
-    android:background="@drawable/background_auth">
+
+    android:background="@drawable/bgimage_blur">
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -23,19 +24,11 @@
                 android:layout_marginTop="21dp"
                 android:layout_marginRight="7dp"
                 android:layout_marginBottom="13dp"
-                android:layout_weight="1"
-                android:background="@drawable/blocks_main_menu"
-                tools:ignore="ExtraText">
 
-                <ImageView
-                    android:id="@+id/Main_menu_imageView1"
-                    android:layout_width="150dp"
-                    android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="20dp" />
-                />
+                android:background="@drawable/blocks_main_menu"
+                tools:ignore="ExtraText"
+                android:elevation="10dp"
+                android:translationY="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -46,22 +39,23 @@
                         android:id="@+id/Main_menu_textView1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:layout_marginBottom="75dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="15dp"
                         android:gravity="center"
                         android:text="Справочник"
                         android:textColor="@color/White" />
 
-                    <Button
-                        android:id="@+id/Main_menu_button1"
+                    <TextView
+                        android:id="@+id/main_menu_textView"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="14dp"
-                        android:layout_marginTop="20dp"
-                        android:layout_marginRight="14dp"
+                        android:layout_height="wrap_content"
                         android:layout_marginBottom="20dp"
-                        android:text="Button" />
+                        android:gravity="left"
+                        android:paddingStart="30dp"
+                        android:paddingEnd="30dp"
+                        android:text="Справочник"
+                        android:textColor="@color/White" />
+
                 </LinearLayout>
             </LinearLayout>
 
@@ -101,7 +95,7 @@
                         android:text="Справочник"
                         android:textColor="@color/White" />
 
-                    <Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/Main_menu_button2"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -110,7 +104,11 @@
                         android:layout_marginTop="20dp"
                         android:layout_marginRight="14dp"
                         android:layout_marginBottom="20dp"
-                        android:text="Button" />
+                        android:background="@drawable/radius_for_button"
+                        android:backgroundTint="@color/LightGreen"
+                        android:fontFamily="@font/abeezee"
+                        android:text="Зайти"
+                        android:textColor="@color/White" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -145,21 +143,27 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
+                        android:layout_marginLeft="14dp"
+                        android:layout_marginRight="14dp"
+
                         android:layout_marginBottom="75dp"
                         android:gravity="center"
-                        android:text="Справочник"
+                        android:text="Медитационные\nупражнения"
                         android:textColor="@color/White" />
 
-                    <Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/Main_menu_button3"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginLeft="14dp"
-                        android:layout_marginTop="20dp"
                         android:layout_marginRight="14dp"
                         android:layout_marginBottom="20dp"
-                        android:text="Button" />
+                        android:background="@drawable/radius_for_button"
+                        android:backgroundTint="@color/LightGreen"
+                        android:fontFamily="@font/abeezee"
+                        android:text="Зайти"
+                        android:textColor="@color/White" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -200,16 +204,20 @@
                         android:gravity="center"
                         android:text="Справочник" />
 
-                    <Button
+                    <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/Main_menu_button4"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_gravity="center"
-                        android:layout_marginRight="14dp"
                         android:layout_marginLeft="14dp"
-                        android:layout_marginBottom="20dp"
                         android:layout_marginTop="20dp"
-                        android:text="Button" />
+                        android:layout_marginRight="14dp"
+                        android:layout_marginBottom="20dp"
+                        android:background="@drawable/radius_for_button"
+                        android:backgroundTint="@color/LightGreen"
+                        android:fontFamily="@font/abeezee"
+                        android:text="Зайти"
+                        android:textColor="@color/White" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -217,13 +225,35 @@
     </ScrollView>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="118dp"
+        android:layout_height="90dp"
         android:orientation="horizontal"
         android:background="@drawable/radius_for_panel_in_main_menu"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent">
 
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="249dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:src="@drawable/icon_profil" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="249dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:src="@drawable/lotus" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="249dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:src="@drawable/icon_setting" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
