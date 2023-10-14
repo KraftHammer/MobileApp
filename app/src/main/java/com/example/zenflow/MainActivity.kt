@@ -35,15 +35,15 @@ class MainActivity : AppCompatActivity() {
                 val isAut = db.getUser(login, pass)
 
                 if(isAut){
-                    Toast.makeText(this, "Пользователь $login авторизован", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Пользователь авторизован", Toast.LENGTH_LONG).show()
                     Login.text.clear()
                     Password.text.clear()
 
-                    val intent = Intent(this, registration::class.java)
+                    val intent = Intent(this, main_menu::class.java)
                     startActivity(intent)
                 }
                 else{
-                    Toast.makeText(this, "Пользователь $login не авторизован", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Пользователь не авторизован", Toast.LENGTH_LONG).show()
                 }
             }
         }
