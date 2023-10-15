@@ -1,12 +1,16 @@
 package com.example.zenflow
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
+import android.view.LayoutInflater
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import org.w3c.dom.Text
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,6 +22,7 @@ class MainActivity : AppCompatActivity() {
         val Login: EditText = findViewById(R.id.editTextLogin)
         val Password: EditText = findViewById(R.id.editTextPassword)
 
+
         btn_reg.setOnClickListener {
             val intent: Intent = Intent(this, registration::class.java)
             startActivity(intent)
@@ -28,14 +33,15 @@ class MainActivity : AppCompatActivity() {
             val pass = Password.text.trim().toString()
 
             if(login.equals("") || pass.equals("")){
-                Toast.makeText(this, "Введите данные", Toast.LENGTH_SHORT).show()
+                errortoast(this, "Введите данные", Toast.LENGTH_SHORT).show()
             }
             else{
                 val db = DbHelper(this,null)
                 val isAut = db.getUser(login, pass)
 
                 if(isAut){
-                    Toast.makeText(this, "Пользователь авторизован", Toast.LENGTH_LONG).show()
+                    errortoast(this, "Пользователь авторизован", Toast.LENGTH_LONG).show()
+
                     Login.text.clear()
                     Password.text.clear()
 
@@ -43,9 +49,20 @@ class MainActivity : AppCompatActivity() {
                     startActivity(intent)
                 }
                 else{
-                    Toast.makeText(this, "Пользователь не авторизован", Toast.LENGTH_LONG).show()
+                    errortoast(this, "Пользователь не авторизован", Toast.LENGTH_LONG).show()
                 }
             }
         }
+    }
+    private fun errortoast(context: Context, title:String, duration: Int) : Toast{
+        val layout = layoutInflater.inflate(R.layout.toast_custom, findViewById(R.id.linearlayout))
+        layout.findViewById<TextView>(R.id.customToast).text = title
+
+        val myToast = Toast(context)
+        myToast.duration = duration
+        myToast.setGravity(Gravity.TOP,0,0)
+        myToast.view = layout
+
+        return myToast
     }
 }

@@ -1,15 +1,17 @@
 package com.example.zenflow
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.view.Gravity
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 
 class registration : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
+    public override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_registration)
 
@@ -30,23 +32,33 @@ class registration : AppCompatActivity() {
             val pass2 = RepeatPassword.text.trim().toString()
 
             if(login == "" || pass == "" || pass2 == ""){
-                Toast.makeText(this, "Введите данные", Toast.LENGTH_LONG).show()
-
+                errortoast(this, "Введите данные", Toast.LENGTH_SHORT).show()
             }
             else if(pass != pass2){
-                Toast.makeText(this, "Пароли не совпадают", Toast.LENGTH_LONG).show()
+                errortoast(this, "Пароли не совпадают", Toast.LENGTH_SHORT).show()
+
             }
             else{
                 val user = User(login, pass)
-
                 val db = DbHelper(this,null)
-                db.addUser(user)
-                Toast.makeText(this, "Пользователь добавлен", Toast.LENGTH_LONG). show()
 
+                db.addUser(user)
+                errortoast(this, "Пользователь добавлен", Toast.LENGTH_SHORT).show()
                 Login.text.clear()
                 Password.text.clear()
                 RepeatPassword.text.clear()
             }
         }
+    }
+    private fun errortoast(context: Context, title:String, duration: Int) : Toast{
+        val layout = layoutInflater.inflate(R.layout.toast_custom, findViewById(R.id.linearlayout))
+        layout.findViewById<TextView>(R.id.customToast).text = title
+
+        val myToast = Toast(context)
+        myToast.duration = duration
+        myToast.setGravity(Gravity.TOP,0,0)
+        myToast.view = layout
+
+        return myToast
     }
 }

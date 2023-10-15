@@ -74,10 +74,10 @@
                     android:id="@+id/Main_menu_imageView2"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="20dp" />
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp" />
                 />
 
                 <LinearLayout
@@ -90,7 +90,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:layout_marginBottom="75dp"
                         android:gravity="center"
                         android:text="Справочник"
                         android:textColor="@color/White" />
@@ -98,17 +97,18 @@
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/Main_menu_button2"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginLeft="14dp"
-                        android:layout_marginTop="20dp"
                         android:layout_marginRight="14dp"
+                        android:layout_marginTop="70dp"
                         android:layout_marginBottom="20dp"
                         android:background="@drawable/radius_for_button"
                         android:backgroundTint="@color/LightGreen"
                         android:fontFamily="@font/abeezee"
                         android:text="Зайти"
-                        android:textColor="@color/White" />
+                        android:textColor="@color/White"
+                        tools:ignore="TouchTargetSizeCheck" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -127,10 +127,10 @@
                     android:id="@+id/Main_menu_imageView3"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="20dp" />
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp" />
                 />
 
                 <LinearLayout
@@ -145,8 +145,6 @@
                         android:layout_marginTop="12dp"
                         android:layout_marginLeft="14dp"
                         android:layout_marginRight="14dp"
-
-                        android:layout_marginBottom="75dp"
                         android:gravity="center"
                         android:text="Медитационные\nупражнения"
                         android:textColor="@color/White" />
@@ -158,12 +156,14 @@
                         android:layout_gravity="center"
                         android:layout_marginLeft="14dp"
                         android:layout_marginRight="14dp"
+                        android:layout_marginTop="60dp"
                         android:layout_marginBottom="20dp"
                         android:background="@drawable/radius_for_button"
                         android:backgroundTint="@color/LightGreen"
                         android:fontFamily="@font/abeezee"
                         android:text="Зайти"
-                        android:textColor="@color/White" />
+                        android:textColor="@color/White"
+                        tools:ignore="TouchTargetSizeCheck" />
                 </LinearLayout>
             </LinearLayout>
 
@@ -182,10 +182,10 @@
                     android:id="@+id/Main_menu_imageView4"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
-                    android:layout_marginLeft="20dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginRight="20dp"
-                    android:layout_marginBottom="20dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
                     />
                 />
 
@@ -199,7 +199,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:layout_marginBottom="75dp"
                         android:textColor="@color/White"
                         android:gravity="center"
                         android:text="Справочник" />
@@ -207,17 +206,18 @@
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/Main_menu_button4"
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginLeft="14dp"
-                        android:layout_marginTop="20dp"
                         android:layout_marginRight="14dp"
+                        android:layout_marginTop="70dp"
                         android:layout_marginBottom="20dp"
                         android:background="@drawable/radius_for_button"
                         android:backgroundTint="@color/LightGreen"
                         android:fontFamily="@font/abeezee"
                         android:text="Зайти"
-                        android:textColor="@color/White" />
+                        android:textColor="@color/White"
+                        tools:ignore="TouchTargetSizeCheck" />
                 </LinearLayout>
             </LinearLayout>
 
