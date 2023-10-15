@@ -9,13 +9,13 @@
     android:background="@drawable/bgimage_blur">
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        tools:ignore="MissingConstraints">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            tools:ignore="MissingConstraints">
+            android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -42,7 +42,7 @@
                         android:layout_marginTop="20dp"
                         android:layout_marginBottom="15dp"
                         android:gravity="center"
-                        android:text="Справочник"
+                        android:text="Цитата дня"
                         android:textColor="@color/White" />
 
                     <TextView
@@ -53,7 +53,7 @@
                         android:gravity="left"
                         android:paddingStart="30dp"
                         android:paddingEnd="30dp"
-                        android:text="Справочник"
+                        android:text=""
                         android:textColor="@color/White" />
 
                 </LinearLayout>
@@ -116,7 +116,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginLeft="7dp"
-                android:layout_marginTop="21dp"
                 android:layout_marginRight="7dp"
                 android:layout_marginBottom="13dp"
                 android:layout_weight="1"
@@ -171,10 +170,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                android:layout_marginTop="21dp"
                 android:layout_marginLeft="7dp"
                 android:layout_marginRight="7dp"
-                android:layout_marginBottom="13dp"
+                android:layout_marginBottom="150dp"
                 android:background="@drawable/blocks_main_menu"
                 tools:ignore="ExtraText">
 
