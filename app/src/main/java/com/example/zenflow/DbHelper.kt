@@ -8,13 +8,24 @@ import android.database.sqlite.SQLiteOpenHelper
 
 class DbHelper(val context: Context, val factory: CursorFactory?) : SQLiteOpenHelper(context, "ZenFlow", factory, 1) {
     override fun onCreate(db: SQLiteDatabase?) {
-        val query = "CREATE TABLE users (id INT PRIMARY KEY, login TEXT, pass TEXT)"
-        db!!.execSQL(query)
+        db!!.execSQL("CREATE TABLE users (id INT PRIMARY KEY, login TEXT, pass TEXT)")
+        db!!.execSQL("CREATE TABLE guide (id INT PRIMARY KEY, title TEXT, description TEXT, image BLOB)")
+
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, p1: Int, p2: Int) {
         db!!.execSQL("DROP TABLE IF EXISTS users")
         onCreate(db)
+    }
+
+    fun addGuide(guide:Guide){
+        val values = ContentValues()
+        values.put("Title", guide.Title)
+        values.put("Description", guide.Description)
+        values.put("Image", guide.Image)
+
+        val db = this.writableDatabase
+        db.insert("guide", null, values)
     }
 
     fun addUser(user:User){
@@ -33,5 +44,11 @@ class DbHelper(val context: Context, val factory: CursorFactory?) : SQLiteOpenHe
 
         val results = db.rawQuery("SELECT * FROM users WHERE login = '$login' AND pass = '$password'", null)
         return  results.moveToFirst()
+    }
+    fun getGuide(title: String, desc: String) : Boolean{
+        val db = this.readableDatabase
+
+        val results = db.rawQuery("SELECT * FROM guide WHERE title = '$title' AND description = '$desc'",null)
+        return results.moveToFirst()
     }
 }
