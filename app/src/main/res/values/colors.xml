@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="White">#FFFFFFFF</color>
-    <color name="VeryLightGreen">#E4FFDF</color>
-    <color name="eighteenVeryLightGreen">#CCE4FFDF</color>
-    <color name="LightGreen">#9FCA45</color>
-    <color name="Pear">#649D33</color>
-    <color name="eighteenPear">#CC649D33</color>
-    <color name="Pickle">#507D2A</color>
-    <color name="ForestGreen">#2D572C</color>
-    <color name="Black">#1D1818</color>
-    <color name="BlackTint">#401D1818</color>
+    <color name="BlackText">#1D1818</color>
+    <color name="WhiteText">#F5F5F5</color>
+    <color name="ForBlocks">#E4FFDF</color>
+    <color name="ForEditText">#9FCA45</color>
+    <color name="ForPopApp">#649D33</color>
+    <color name="ForButtonGreen">#99C53D</color>
+    <color name="ForButtonPurple">#714980</color>
 </resources>

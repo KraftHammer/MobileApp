@@ -20,9 +20,9 @@ class DbHelper(val context: Context, val factory: CursorFactory?) : SQLiteOpenHe
 
     fun addGuide(guide:Guide){
         val values = ContentValues()
-        values.put("Title", guide.Title)
-        values.put("Description", guide.Description)
-        values.put("Image", guide.Image)
+        values.put("title", guide.Title)
+        values.put("description", guide.Description)
+        values.put("image", guide.Image)
 
         val db = this.writableDatabase
         db.insert("guide", null, values)

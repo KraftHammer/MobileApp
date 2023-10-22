@@ -39,7 +39,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="12dp"
                 android:alpha="0.7"
-                android:fontFamily="@font/aref_ruqaa"
+                android:fontFamily="@font/gabriela"
                 android:gravity="center"
                 android:text="@string/zenflow"
                 android:textColor="#CC1D1818"
@@ -55,14 +55,14 @@
                 android:layout_marginBottom="22dp"
                 android:background="@drawable/radius_for_edittext"
                 android:ems="10"
-                android:fontFamily="@font/abeezee"
+                android:fontFamily="@font/gabriela"
                 android:hint="@string/login"
                 android:inputType="text"
                 android:paddingStart="17dp"
                 android:paddingTop="17dp"
                 android:paddingBottom="17dp"
-                android:textColor="@color/White"
-                android:textColorHint="@color/BlackTint"
+                android:textColor="@color/WhiteText"
+                android:textColorHint="#401D1818"
                 tools:ignore="RtlSymmetry,TextContrastCheck"
                 />
 
@@ -75,14 +75,14 @@
                 android:layout_marginBottom="22dp"
                 android:background="@drawable/radius_for_edittext"
                 android:ems="10"
-                android:fontFamily="@font/abeezee"
+                android:fontFamily="@font/gabriela"
                 android:hint="@string/password"
                 android:inputType="textPassword"
                 android:paddingStart="17dp"
                 android:paddingTop="17dp"
                 android:paddingBottom="17dp"
-                android:textColor="@color/White"
-                android:textColorHint="@color/BlackTint"
+                android:textColor="@color/WhiteText"
+                android:textColorHint="#401D1818"
                 tools:ignore="RtlSymmetry,TextContrastCheck" />
 
             <EditText
@@ -95,14 +95,14 @@
                 android:autofillHints=""
                 android:background="@drawable/radius_for_edittext"
                 android:ems="10"
-                android:fontFamily="@font/abeezee"
+                android:fontFamily="@font/gabriela"
                 android:hint="Повторите пароль"
                 android:inputType="textPassword"
                 android:paddingStart="17dp"
                 android:paddingTop="17dp"
                 android:paddingBottom="17dp"
-                android:textColor="@color/White"
-                android:textColorHint="@color/BlackTint"
+                android:textColor="@color/WhiteText"
+                android:textColorHint="#401D1818"
                 tools:ignore="RtlSymmetry,TextContrastCheck" />
 
             <androidx.appcompat.widget.AppCompatButton
@@ -112,14 +112,14 @@
                 android:layout_marginStart="27dp"
                 android:layout_marginEnd="27dp"
                 android:background="@drawable/radius_for_button"
-                android:backgroundTint="@color/LightGreen"
-                android:fontFamily="@font/abeezee"
+                android:backgroundTint="@color/ForButtonGreen"
+                android:fontFamily="@font/gabriela"
                 android:paddingTop="14dp"
                 android:paddingBottom="14dp"
                 android:text="Зарегистрироваться"
-                android:textColor="@color/White"
-                android:textSize="20dp"
                 android:textAllCaps="false"
+                android:textColor="@color/WhiteText"
+                android:textSize="20dp"
                 tools:ignore="RtlSymmetry,TextContrastCheck" />
         </LinearLayout>
 
@@ -127,11 +127,12 @@
             android:id="@+id/Reg_btn_to_aut"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Авторизоваться"
-            android:gravity="center"
-            android:textSize="16dp"
             android:layout_marginTop="10dp"
-            android:textColor="@color/White"/>
+            android:fontFamily="@font/gabriela"
+            android:gravity="center"
+            android:text="Авторизоваться"
+            android:textColor="@color/WhiteText"
+            android:textSize="16dp" />
 
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
