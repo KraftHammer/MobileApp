@@ -14,5 +14,5 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "ZenFlow"
-include(":app")
+include(":app", "application")
  
