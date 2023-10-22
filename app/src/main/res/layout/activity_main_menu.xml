@@ -20,7 +20,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginTop="21dp"
                 android:layout_marginBottom="13dp"
                 android:background="@drawable/for_panel_recom"
                 tools:ignore="ExtraText"

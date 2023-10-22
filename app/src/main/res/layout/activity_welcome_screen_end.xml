@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_screen_1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70sp"
+        android:text="Благодарим за уделённое время.
+Сейчас вас перенесёт на главный экран"
+        android:textSize="30sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:fontFamily="@font/gabriela"
+        android:textColor="@color/WhiteText"
+        android:layout_marginBottom="350sp"
+        android:gravity="center"/>
+
+</LinearLayout>

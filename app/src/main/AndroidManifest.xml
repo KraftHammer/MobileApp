@@ -13,6 +13,21 @@
         android:theme="@style/Theme.ZenFlow"
         tools:targetApi="31">
         <activity
+            android:name=".welcome_screen_end"
+            android:exported="false" />
+        <activity
+            android:name=".welcome_screen_test2"
+            android:exported="false" />
+        <activity
+            android:name=".welcome_screen_test1"
+            android:exported="false" />
+        <activity
+            android:name=".welcome_screen_start"
+            android:exported="false" />
+        <activity
+            android:name=".welcome_screen_with_button1"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity

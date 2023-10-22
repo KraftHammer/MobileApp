@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/welcome_screen_1"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70sp"
+        android:text="Прежде чем мы начнём, ответьте на пару вопросов"
+        android:textSize="30sp"
+        android:layout_marginLeft="50sp"
+        android:layout_marginRight="50sp"
+        android:fontFamily="@font/gabriela"
+        android:textColor="@color/WhiteText"
+        android:layout_marginBottom="350sp"
+        android:gravity="center"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Давай начнём!"
+        android:layout_marginBottom="30sp"
+        android:background="@drawable/radius_for_button"
+        android:backgroundTint="@color/ForButtonPurple"
+        android:layout_marginLeft="65sp"
+        android:layout_marginRight="65sp"
+        android:padding="15sp"
+        android:textSize="20sp"
+        android:textColor="@color/WhiteText"
+        android:fontFamily="@font/gabriela"
+        android:textAllCaps="false"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/WhiteText"
+        android:text="Пропустить"
+        android:textSize="20sp"
+        android:fontFamily="@font/gabriela"
+        android:gravity="center"/>
+</LinearLayout>
