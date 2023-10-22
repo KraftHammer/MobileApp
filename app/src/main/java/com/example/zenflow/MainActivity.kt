@@ -33,7 +33,6 @@ class MainActivity : AppCompatActivity() {
             val login = Login.text.trim().toString()
             val pass = Password.text.trim().toString()
             if(login.equals("") || pass.equals("")){
-                //btn_reg.text = getWeather("beff1410e1ce24a8d3f42b0378031768","Barnaul").toString()
                 errortoast(this, "Введите данные", Toast.LENGTH_SHORT).show()
             }
             else{

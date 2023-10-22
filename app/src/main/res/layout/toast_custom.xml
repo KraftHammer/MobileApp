@@ -17,5 +17,5 @@
         android:fontFamily="@font/gabriela"
         android:text=""
         android:gravity="center"
-        android:textColor="@color/White"/>
+        android:textColor="@color/WhiteText"/>
 </LinearLayout>
