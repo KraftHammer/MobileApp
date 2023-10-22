@@ -22,7 +22,7 @@
                 android:layout_height="match_parent"
                 android:layout_marginTop="21dp"
                 android:layout_marginBottom="13dp"
-                android:background="@drawable/for"
+                android:background="@drawable/for_panel_recom"
                 tools:ignore="ExtraText"
                 android:orientation="vertical">
 
@@ -33,23 +33,34 @@
 
                     <ImageView
                         android:id="@+id/imageView"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@tools:sample/avatars" />
+                        android:layout_width="30dp"
+                        android:layout_height="33dp"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="10sp"
+                        android:layout_marginTop="15sp"
+                        android:layout_marginRight="5sp"
+                        android:src="@drawable/suncloud" />
 
                     <TextView
-                        android:id="@+id/textView2"
+                        android:id="@+id/textWeatger"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_marginTop="15sp"
 
-                        android:text="TextView" />
+                        android:layout_marginRight="15sp"
+                        android:layout_gravity="center"
+                        android:text="+15"
+                        android:textSize="20sp"
+                        android:textColor="@color/WhiteText"/>
 
                     <ImageView
                         android:id="@+id/imageView3"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="right"
-                        android:src="@tools:sample/avatars" />
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="20sp"
+                        android:layout_marginLeft="270sp"
+
+                        android:src="@drawable/icon_setting" />
                 </LinearLayout>
 
                 <TextView
@@ -67,6 +78,10 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:orientation="vertical"
+                    android:layout_marginLeft="15sp"
+                    android:layout_marginRight="15sp"
+                    android:layout_marginBottom="15sp"
+                    android:padding="10sp"
                     android:background="@drawable/for_recom">
 
                     <TextView
@@ -75,7 +90,7 @@
                         android:layout_height="wrap_content"
                         android:textColor="@color/WhiteText"
 
-                        android:textSize="18sp"
+                        android:textSize="16sp"
                         android:text="Κoгдa тeбe плoхo — пpиcлушaйcя к пpиpoдe. Тишинa миpa уcпoкaивaeт лучшe, чeм миллиoны нeнужных cлoв." />
 
                     <LinearLayout
@@ -118,6 +133,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
                         android:gravity="center"
+                        android:fontFamily="@font/gabriela"
                         android:text="Справочник"
                         android:textColor="@color/WhiteText" />
 
@@ -131,10 +147,10 @@
                         android:layout_marginTop="70dp"
                         android:layout_marginBottom="20dp"
                         android:background="@drawable/radius_for_button"
-                        android:backgroundTint="@color/LightGreen"
-                        android:fontFamily="@font/abeezee"
+                        android:backgroundTint="@color/ForButtonGreen"
+                        android:fontFamily="@font/gabriela"
                         android:text="Зайти"
-                        android:textColor="@color/White"
+                        android:textColor="@color/WhiteText"
                         tools:ignore="TouchTargetSizeCheck" />
                 </LinearLayout>
             </LinearLayout>
@@ -174,7 +190,7 @@
                         android:layout_marginRight="14dp"
                         android:gravity="center"
                         android:text="Медитационные\nупражнения"
-                        android:textColor="@color/White" />
+                        android:textColor="@color/WhiteText" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/Main_menu_button3"
@@ -186,10 +202,10 @@
                         android:layout_marginTop="60dp"
                         android:layout_marginBottom="20dp"
                         android:background="@drawable/radius_for_button"
-                        android:backgroundTint="@color/LightGreen"
-                        android:fontFamily="@font/abeezee"
+                        android:backgroundTint="@color/ForButtonGreen"
+                        android:fontFamily="@font/gabriela"
                         android:text="Зайти"
-                        android:textColor="@color/White"
+                        android:textColor="@color/WhiteText"
                         tools:ignore="TouchTargetSizeCheck" />
                 </LinearLayout>
             </LinearLayout>
@@ -226,7 +242,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="12dp"
-                        android:textColor="@color/White"
+                        android:textColor="@color/WhiteText"
                         android:gravity="center"
                         android:text="Справочник" />
 
@@ -240,10 +256,10 @@
                         android:layout_marginTop="70dp"
                         android:layout_marginBottom="20dp"
                         android:background="@drawable/radius_for_button"
-                        android:backgroundTint="@color/LightGreen"
-                        android:fontFamily="@font/abeezee"
+                        android:backgroundTint="@color/ForButtonGreen"
+                        android:fontFamily="@font/gabriela"
                         android:text="Зайти"
-                        android:textColor="@color/White"
+                        android:textColor="@color/WhiteText"
                         tools:ignore="TouchTargetSizeCheck" />
                 </LinearLayout>
             </LinearLayout>
