@@ -139,7 +139,7 @@
                         android:gravity="center"
                         android:text="Медитация"
                         android:textColor="@color/WhiteText"
-                        android:textSize="23sp" />
+                        android:textSize="20sp" />
 
                     <TextView
                         android:id="@+id/Main_menu_textView1"
@@ -214,7 +214,7 @@
                         android:gravity="center"
                         android:text="Справочник"
                         android:textColor="@color/WhiteText"
-                        android:textSize="23sp" />
+                        android:textSize="20sp" />
 
                     <TextView
                         android:id="@+id/Main_menu_textView2"
@@ -290,7 +290,7 @@
                         android:gravity="center"
                         android:text="Достижения"
                         android:textColor="@color/WhiteText"
-                        android:textSize="23sp" />
+                        android:textSize="20sp" />
 
                     <TextView
                         android:id="@+id/Main_menu_textView3"
@@ -365,7 +365,7 @@
                         android:gravity="center"
                         android:text="Мелодии"
                         android:textColor="@color/WhiteText"
-                        android:textSize="23sp" />
+                        android:textSize="20sp" />
 
                     <TextView
                         android:id="@+id/Main_menu_textView4"
@@ -438,7 +438,7 @@
                         android:gravity="center"
                         android:fontFamily="@font/gabriela"
                         android:text="Литература"
-                        android:textSize="23sp"
+                        android:textSize="20sp"
                         android:textColor="@color/WhiteText" />
 
                     <TextView
