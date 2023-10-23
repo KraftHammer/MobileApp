@@ -20,10 +20,14 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginBottom="13dp"
                 android:background="@drawable/for_panel_recom"
-                tools:ignore="ExtraText"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                tools:ignore="ExtraText">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -44,21 +48,19 @@
                         android:id="@+id/textWeather"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="15sp"
-
-                        android:layout_marginRight="15sp"
                         android:layout_gravity="center"
+                        android:layout_marginTop="15sp"
+                        android:layout_marginRight="15sp"
                         android:text=""
-                        android:textSize="20sp"
-                        android:textColor="@color/WhiteText"/>
+                        android:textColor="@color/WhiteText"
+                        android:textSize="20sp" />
 
                     <ImageView
                         android:id="@+id/imageView3"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
+                        android:layout_marginLeft="300sp"
                         android:layout_marginTop="20sp"
-                        android:layout_marginLeft="270sp"
-
                         android:src="@drawable/icon_setting" />
                 </LinearLayout>
 
@@ -66,31 +68,30 @@
                     android:id="@+id/textView4"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/gabriela"
                     android:gravity="center"
                     android:text="Совет дня"
                     android:textColor="@color/WhiteText"
-                    android:fontFamily="@font/gabriela"
-                    android:textSize="30sp"
-                    />
+                    android:textSize="30sp" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical"
                     android:layout_marginLeft="15sp"
                     android:layout_marginRight="15sp"
                     android:layout_marginBottom="15sp"
-                    android:padding="10sp"
-                    android:background="@drawable/for_recom">
+                    android:background="@drawable/for_recom"
+                    android:orientation="vertical"
+                    android:padding="10sp">
 
                     <TextView
                         android:id="@+id/textView5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:textColor="@color/WhiteText"
+                        android:text="Κoгдa тeбe плoхo — пpиcлушaйcя к пpиpoдe. Тишинa миpa уcпoкaивaeт лучшe, чeм миллиoны нeнужных cлoв."
 
-                        android:textSize="16sp"
-                        android:text="Κoгдa тeбe плoхo — пpиcлушaйcя к пpиpoдe. Тишинa миpa уcпoкaивaeт лучшe, чeм миллиoны нeнужных cлoв." />
+                        android:textColor="@color/WhiteText"
+                        android:textSize="16sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -102,14 +103,89 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="7dp"
+                android:layout_marginLeft="10dp"
                 android:layout_marginTop="21dp"
-                android:layout_marginRight="7dp"
+                android:layout_marginRight="10dp"
                 android:layout_marginBottom="13dp"
                 android:layout_weight="1"
                 android:background="@drawable/blocks_main_menu"
-                tools:ignore="ExtraText"
-                android:elevation="4dp">
+                android:elevation="4dp"
+                tools:ignore="ExtraText">
+
+                <ImageView
+                    android:id="@+id/Main_menu_imageView1"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/lotos_in_menu" />
+                />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Main_menu_textView2_1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="35dp"
+                        android:fontFamily="@font/gabriela"
+                        android:gravity="center"
+                        android:text="Медитация"
+                        android:textColor="@color/WhiteText"
+                        android:textSize="23sp" />
+
+                    <TextView
+                        android:id="@+id/Main_menu_textView1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/gabriela"
+                        android:gravity="left"
+                        android:text="Множество функций для расслабления"
+                        android:textColor="@color/WhiteText"
+                        android:textSize="16sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Main_menu_button1"
+                        android:layout_width="150sp"
+                        android:layout_height="40sp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/radius_for_button"
+                        android:backgroundTint="@color/ForPopApp"
+                        android:fontFamily="@font/gabriela"
+                        android:textSize="20sp"
+                        android:text="Войти"
+                        android:textAllCaps="false"
+                        android:textColor="@color/WhiteText"
+                        tools:ignore="TouchTargetSizeCheck" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="13dp"
+                android:layout_weight="1"
+                android:background="@drawable/blocks_main_menu"
+                android:elevation="4dp"
+                tools:ignore="ExtraText">
 
                 <ImageView
                     android:id="@+id/Main_menu_imageView2"
@@ -118,7 +194,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginBottom="10dp" />
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/bookhelper"
                 />
 
                 <LinearLayout
@@ -127,43 +204,64 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/Main_menu_textView2_2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="35dp"
+                        android:fontFamily="@font/gabriela"
+                        android:gravity="center"
+                        android:text="Справочник"
+                        android:textColor="@color/WhiteText"
+                        android:textSize="23sp" />
+
+                    <TextView
                         android:id="@+id/Main_menu_textView2"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:gravity="center"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginBottom="10dp"
                         android:fontFamily="@font/gabriela"
-                        android:text="Справочник"
-                        android:textColor="@color/WhiteText" />
+                        android:gravity="left"
+                        android:text="Узнайте много нового в справочнике"
+                        android:textColor="@color/WhiteText"
+                        android:textSize="16sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/Main_menu_button2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="150sp"
+                        android:layout_height="40sp"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="14dp"
-                        android:layout_marginRight="14dp"
-                        android:layout_marginTop="70dp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginBottom="10dp"
                         android:background="@drawable/radius_for_button"
-                        android:backgroundTint="@color/ForButtonGreen"
+                        android:backgroundTint="@color/ForPopApp"
                         android:fontFamily="@font/gabriela"
-                        android:text="Зайти"
+                        android:text="Войти"
+                        android:textSize="20sp"
+                        android:textAllCaps="false"
                         android:textColor="@color/WhiteText"
                         tools:ignore="TouchTargetSizeCheck" />
+
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="7dp"
-                android:layout_marginRight="7dp"
+                android:layout_marginLeft="10dp"
+
+                android:layout_marginRight="10dp"
                 android:layout_marginBottom="13dp"
                 android:layout_weight="1"
                 android:background="@drawable/blocks_main_menu"
-                tools:ignore="ExtraText"
-                android:elevation="4dp">
+                android:elevation="4dp"
+                tools:ignore="ExtraText">
 
                 <ImageView
                     android:id="@+id/Main_menu_imageView3"
@@ -172,7 +270,8 @@
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
-                    android:layout_marginBottom="10dp" />
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/achievements"
                 />
 
                 <LinearLayout
@@ -181,44 +280,63 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/Main_menu_textView2_3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="35dp"
+                        android:fontFamily="@font/gabriela"
+                        android:gravity="center"
+                        android:text="Достижения"
+                        android:textColor="@color/WhiteText"
+                        android:textSize="23sp" />
+
+                    <TextView
                         android:id="@+id/Main_menu_textView3"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
-                        android:layout_marginLeft="14dp"
-                        android:layout_marginRight="14dp"
-                        android:gravity="center"
-                        android:text="Медитационные\nупражнения"
-                        android:textColor="@color/WhiteText" />
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/gabriela"
+                        android:gravity="left"
+                        android:text="Наблюдайте за своим\nпрогрессом"
+                        android:textColor="@color/WhiteText"
+                        android:textSize="16sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/Main_menu_button3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:layout_marginLeft="14dp"
-                        android:layout_marginRight="14dp"
-                        android:layout_marginTop="60dp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_width="150sp"
+                        android:layout_height="40sp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginBottom="10dp"
                         android:background="@drawable/radius_for_button"
-                        android:backgroundTint="@color/ForButtonGreen"
+                        android:backgroundTint="@color/ForPopApp"
                         android:fontFamily="@font/gabriela"
-                        android:text="Зайти"
+                        android:text="Войти"
+                        android:textSize="20sp"
+                        android:textAllCaps="false"
                         android:textColor="@color/WhiteText"
                         tools:ignore="TouchTargetSizeCheck" />
+
                 </LinearLayout>
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="13dp"
                 android:layout_weight="1"
-                android:layout_marginLeft="7dp"
-                android:layout_marginRight="7dp"
-                android:layout_marginBottom="150dp"
                 android:background="@drawable/blocks_main_menu"
-                tools:ignore="ExtraText"
-                android:elevation="4dp">
+                android:elevation="4dp"
+                tools:ignore="ExtraText">
 
                 <ImageView
                     android:id="@+id/Main_menu_imageView4"
@@ -228,7 +346,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
                     android:layout_marginBottom="10dp"
-                    />
+                    android:src="@drawable/melodi"/>
                 />
 
                 <LinearLayout
@@ -237,29 +355,124 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/Main_menu_textView2_4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="35dp"
+                        android:fontFamily="@font/gabriela"
+                        android:gravity="center"
+                        android:text="Мелодии"
+                        android:textColor="@color/WhiteText"
+                        android:textSize="23sp" />
+
+                    <TextView
                         android:id="@+id/Main_menu_textView4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginTop="12dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:fontFamily="@font/gabriela"
+                        android:gravity="left"
+                        android:text="Расслабляющие песни собраны здесь!"
                         android:textColor="@color/WhiteText"
-                        android:gravity="center"
-                        android:text="Справочник" />
+                        android:textSize="16sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
                         android:id="@+id/Main_menu_button4"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_width="150sp"
+                        android:layout_height="40sp"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="14dp"
-                        android:layout_marginRight="14dp"
-                        android:layout_marginTop="70dp"
-                        android:layout_marginBottom="20dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginBottom="10dp"
                         android:background="@drawable/radius_for_button"
-                        android:backgroundTint="@color/ForButtonGreen"
+                        android:backgroundTint="@color/ForPopApp"
                         android:fontFamily="@font/gabriela"
-                        android:text="Зайти"
+                        android:text="Войти"
+                        android:textSize="20sp"
+                        android:textAllCaps="false"
                         android:textColor="@color/WhiteText"
                         tools:ignore="TouchTargetSizeCheck" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="13dp"
+                android:layout_weight="1"
+                android:background="@drawable/blocks_main_menu"
+                tools:ignore="ExtraText"
+                android:elevation="4dp">
+
+                <ImageView
+                    android:id="@+id/Main_menu_imageView5"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/literally"/>
+                />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/Main_menu_textView2_5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginEnd="35dp"
+                        android:gravity="center"
+                        android:fontFamily="@font/gabriela"
+                        android:text="Литература"
+                        android:textSize="23sp"
+                        android:textColor="@color/WhiteText" />
+
+                    <TextView
+                        android:id="@+id/Main_menu_textView5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="left"
+                        android:fontFamily="@font/gabriela"
+                        android:text="множестве интересных\nкниг"
+                        android:textSize="16sp"
+                        android:textColor="@color/WhiteText" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Main_menu_button5"
+                        android:layout_width="150sp"
+                        android:layout_height="40sp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginEnd="35dp"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/radius_for_button"
+                        android:backgroundTint="@color/ForPopApp"
+                        android:fontFamily="@font/gabriela"
+                        android:text="Войти"
+                        android:textSize="20sp"
+                        android:textAllCaps="false"
+                        android:textColor="@color/WhiteText"
+                        tools:ignore="TouchTargetSizeCheck" />
+
                 </LinearLayout>
             </LinearLayout>
 
