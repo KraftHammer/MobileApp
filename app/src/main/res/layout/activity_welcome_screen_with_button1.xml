@@ -10,26 +10,26 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="70sp"
+        android:fontFamily="@font/gabriela_regular"
+        android:gravity="center"
         android:text="Привет, UserName"
-        android:textSize="30sp"
-        android:fontFamily="@font/gabriela"
         android:textColor="@color/WhiteText"
-        android:gravity="center"/>
+        android:textSize="30sp" />
 
     <TextView
 
         android:id="@+id/textView6"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="15sp"
-        android:layout_marginBottom="350sp"
-        android:textSize="30sp"
-        android:fontFamily="@font/gabriela"
         android:layout_marginLeft="50sp"
+        android:layout_marginTop="15sp"
         android:layout_marginRight="50sp"
-        android:textColor="@color/WhiteText"
+        android:layout_marginBottom="350sp"
+        android:fontFamily="@font/gabriela_regular"
+        android:gravity="center"
         android:text="Готов начать сеанс медитации?"
-        android:gravity="center"/>
+        android:textColor="@color/WhiteText"
+        android:textSize="30sp" />
 
     <androidx.appcompat.widget.AppCompatButton
         android:id="@+id/button"

@@ -3,5 +3,6 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/aref_ruqaa</item>
         <item>@font/gabriela</item>
+        <item>@font/gabriela_regular</item>
     </array>
 </resources>

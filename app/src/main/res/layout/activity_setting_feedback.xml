@@ -16,7 +16,7 @@
         android:padding="15sp">
 
         <ImageView
-            android:id="@+id/imageButton"
+            android:id="@+id/setting_back_feedback"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:src="@drawable/qwekwe"
@@ -31,7 +31,7 @@
             android:layout_weight="1"
             android:fontFamily="@font/gabriela"
             android:gravity="center"
-            android:text="Выход"
+            android:text="Обратная связь"
             android:textColor="@color/WhiteText"
             android:textSize="26sp" />
     </LinearLayout>

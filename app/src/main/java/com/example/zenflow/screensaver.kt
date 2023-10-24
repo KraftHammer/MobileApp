@@ -28,7 +28,7 @@ class screensaver : AppCompatActivity() {
         textView2.startAnimation(downUp)
 
         Handler().postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, welcome_screen_with_button1::class.java)
             startActivity(intent)
         }, 3000)
     }
