@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting_about_us"
+    android:background="@drawable/setting_foto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ForEditText"
+        android:orientation="horizontal"
+        android:padding="15sp">
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/qwekwe"
+            />
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/gabriela"
+            android:gravity="center"
+            android:text="Выход"
+            android:textColor="@color/WhiteText"
+            android:textSize="26sp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background ="@drawable/radius_for_linearlayout"
+            android:backgroundTint="#CCE4FFDF"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginBottom="150sp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView9"
+                android:paddingTop = "30sp"
+                android:layout_marginBottom="10sp"
+                android:textColor="@color/BlackText"
+                android:textSize="24sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.01"
+                android:text="Выход из приложения"
+                android:fontFamily="@font/gabriela"
+                android:gravity="center">
+            </TextView>
+            <TextView
+                android:id="@+id/textView10"
+                android:paddingLeft="30sp"
+                android:paddingRight="30sp"
+                android:textColor="@color/BlackText"
+                android:textSize="20sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.01"
+                android:fontFamily="@font/gabriela"
+                android:text="Вы уверены что хотите выйти? Вы так же выйдете из своего аккаунта">
+            </TextView>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30sp"
+                android:layout_marginTop="30sp"
+                android:layout_marginBottom="30sp"
+                android:layout_marginRight="30sp"
+                android:background="@drawable/radius_for_button"
+                android:backgroundTint="@color/ForEditText"
+                android:fontFamily="@font/gabriela"
+                android:padding="15sp"
+                android:text="Выйти"
+                android:textAllCaps="false"
+                android:textColor="@color/WhiteText"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

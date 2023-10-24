@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting_about_us"
+    android:background="@drawable/setting_foto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ForEditText"
+        android:orientation="horizontal"
+        android:padding="15sp">
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/qwekwe"
+            />
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/gabriela"
+            android:gravity="center"
+            android:text="Частые вопросы"
+            android:textColor="@color/WhiteText"
+            android:textSize="26sp" />
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background ="@drawable/radius_for_linearlayout"
+            android:backgroundTint="#CCE4FFDF"
+            android:layout_marginTop="30sp"
+            android:layout_marginRight="20sp"
+            android:layout_marginLeft="20sp"
+            android:layout_marginBottom="150sp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView10"
+                android:paddingTop="30sp"
+                android:paddingRight="30sp"
+                android:paddingLeft="30sp"
+                android:textColor="@color/BlackText"
+                android:textSize="20sp"
+                android:fontFamily="@font/gabriela"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.01"
+                android:text="- Для чего нужно это приложение?">
+            </TextView>
+            <TextView
+                android:id="@+id/textView11"
+                android:paddingTop="15sp"
+                android:textColor="@color/ForPopApp"
+                android:paddingRight="30sp"
+                android:paddingLeft="30sp"
+                android:textSize="20sp"
+                android:fontFamily="@font/gabriela"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.01"
+                android:text="“ZenFlow” призвано помочь людям сократить безконтролируемо-проведенное время за телефоном, путём концентрации и медитаций">
+            </TextView>
+            <TextView
+                android:id="@+id/textView12"
+                android:paddingTop="30sp"
+                android:paddingRight="30sp"
+                android:paddingLeft="30sp"
+                android:textColor="@color/BlackText"
+                android:textSize="20sp"
+                android:fontFamily="@font/gabriela"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.01"
+                android:text="- Почему мне это нужно?">
+            </TextView>
+            <TextView
+                android:id="@+id/textView13"
+                android:paddingTop="15sp"
+                android:textColor="@color/ForPopApp"
+                android:paddingRight="30sp"
+                android:paddingLeft="30sp"
+                android:textSize="20sp"
+                android:fontFamily="@font/gabriela"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.01"
+                android:text="Если вы заметили, что слишком часто проводите время в телефоне, при этом тратя его на не слишком полезные вещи - “ZenFlow” поможет вам в контроле экранного времени">
+            </TextView>
+            <TextView
+                android:id="@+id/textView14"
+                android:paddingTop="30sp"
+                android:paddingRight="30sp"
+                android:paddingLeft="30sp"
+                android:textColor="@color/BlackText"
+                android:textSize="20sp"
+                android:fontFamily="@font/gabriela"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.01"
+                android:text="- Ещё какой-нибудь вопрос?">
+            </TextView>
+            <TextView
+                android:id="@+id/textView15"
+                android:paddingTop="15sp"
+                android:textColor="@color/ForPopApp"
+                android:paddingRight="30sp"
+                android:paddingLeft="30sp"
+                android:paddingBottom="30sp"
+                android:textSize="20sp"
+                android:fontFamily="@font/gabriela"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:letterSpacing="0.01"
+                android:text="Ответ на него">
+            </TextView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

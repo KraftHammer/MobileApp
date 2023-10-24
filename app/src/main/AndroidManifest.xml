@@ -16,6 +16,21 @@
         android:theme="@style/Theme.ZenFlow"
         tools:targetApi="31">
         <activity
+            android:name=".meditation_main_menu"
+            android:exported="false" />
+        <activity
+            android:name=".setting_general_setting"
+            android:exported="false" />
+        <activity
+            android:name=".setting_frequent_questions"
+            android:exported="false" />
+        <activity
+            android:name=".setting_feedback"
+            android:exported="false" />
+        <activity
+            android:name=".setting_exit"
+            android:exported="false" />
+        <activity
             android:name=".setting_about_us"
             android:exported="false" />
         <activity
