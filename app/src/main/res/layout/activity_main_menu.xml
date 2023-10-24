@@ -56,7 +56,7 @@
                         android:textSize="20sp" />
 
                     <ImageView
-                        android:id="@+id/imageView3"
+                        android:id="@+id/btn_setting"
                         android:layout_width="30dp"
                         android:layout_height="30dp"
                         android:layout_marginLeft="300sp"
@@ -156,7 +156,7 @@
                         android:textSize="16sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/Main_menu_button1"
+                        android:id="@+id/Main_menu_tomeditation"
                         android:layout_width="150sp"
                         android:layout_height="40sp"
                         android:layout_gravity="center"
@@ -231,7 +231,7 @@
                         android:textSize="16sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/Main_menu_button2"
+                        android:id="@+id/Main_menu_tosprav"
                         android:layout_width="150sp"
                         android:layout_height="40sp"
                         android:layout_gravity="center"
@@ -307,7 +307,7 @@
                         android:textSize="16sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/Main_menu_button3"
+                        android:id="@+id/Main_menu_toach"
                         android:layout_width="150sp"
                         android:layout_height="40sp"
                         android:layout_gravity="center_vertical"
@@ -382,7 +382,7 @@
                         android:textSize="16sp" />
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/Main_menu_button4"
+                        android:id="@+id/Main_menu_tomelodi"
                         android:layout_width="150sp"
                         android:layout_height="40sp"
                         android:layout_gravity="center"
@@ -456,7 +456,7 @@
                         android:textColor="@color/WhiteText" />
 
                     <androidx.appcompat.widget.AppCompatButton
-                        android:id="@+id/Main_menu_button5"
+                        android:id="@+id/Main_menu_toliter"
                         android:layout_width="150sp"
                         android:layout_height="40sp"
                         android:layout_gravity="center"
