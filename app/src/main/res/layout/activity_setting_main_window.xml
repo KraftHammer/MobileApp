@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".setting_main_window"
+    android:orientation="vertical"
+    android:background="@drawable/setting_foto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ForEditText"
+        android:orientation="horizontal"
+        android:padding="15sp">
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/qwekwe"
+            />
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/gabriela"
+            android:gravity="center"
+            android:text="Настройки"
+            android:textColor="@color/WhiteText"
+            android:textSize="26sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="50sp"
+            android:layout_marginRight="30sp"
+            android:background="@drawable/radius_for_button"
+            android:backgroundTint="@color/ForEditText"
+            android:fontFamily="@font/gabriela"
+            android:padding="15sp"
+            android:text="О нас"
+            android:textAllCaps="false"
+            android:textColor="@color/WhiteText"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="30sp"
+            android:background="@drawable/radius_for_button"
+            android:backgroundTint="@color/ForEditText"
+            android:fontFamily="@font/gabriela"
+            android:padding="15sp"
+            android:text="Общие настройки"
+            android:textAllCaps="false"
+            android:textColor="@color/WhiteText"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="30sp"
+            android:background="@drawable/radius_for_button"
+            android:backgroundTint="@color/ForEditText"
+            android:fontFamily="@font/gabriela"
+            android:padding="15sp"
+            android:text="Обратная связь"
+            android:textAllCaps="false"
+            android:textColor="@color/WhiteText"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginRight="30sp"
+            android:background="@drawable/radius_for_button"
+            android:backgroundTint="@color/ForEditText"
+            android:fontFamily="@font/gabriela"
+            android:padding="15sp"
+            android:text="ЧаВо(Частые вопросы)"
+            android:textAllCaps="false"
+            android:textColor="@color/WhiteText"
+            android:textSize="20sp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Выйти из аккаунта"
+            android:textSize="20sp"
+            android:layout_marginTop="15sp"
+            android:layout_marginLeft="30sp"
+            android:layout_marginRight="30sp"
+            android:textColor="@color/WhiteText"
+            android:padding="15sp"
+            android:fontFamily="@font/gabriela"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/ForEditText"
+            android:background="@drawable/radius_for_button"
+            />
+    </LinearLayout>
+
+</LinearLayout>
