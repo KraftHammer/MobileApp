@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="#CCE4FFDF">
+    android:background="#CCE4FFDF"
+    android:layout_marginTop="15sp">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -11,6 +12,7 @@
         android:layout_marginBottom="15sp">
 
         <TextView
+            android:id="@+id/title_book"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="5sp"
@@ -26,10 +28,10 @@
             android:paddingRight="10sp">
 
             <ImageView
+                android:id="@+id/image_book"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="top"
-                android:src="" />
+                android:layout_gravity="top" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -37,15 +39,16 @@
                 android:orientation="vertical">
 
                 <TextView
+                    android:id="@+id/text_book"
                     android:layout_width="wrap_content"
                     android:layout_height="131dp"
                     android:paddingLeft="15sp"
                     android:paddingRight="10sp"
                     android:paddingBottom="15sp"
-                    android:text=""
                     android:textSize="15sp" />
 
                 <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_book"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="center"
