@@ -54,7 +54,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
-                android:background="@drawable/step2"
+                android:background="@drawable/basic2"
                 android:layout_marginBottom="10sp"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -65,7 +65,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
-                android:background="@drawable/step3"
+                android:background="@drawable/basic1"
                 android:layout_marginBottom="10sp"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -75,7 +75,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
-                android:background="@drawable/step4"
+                android:background="@drawable/basic3"
                 android:layout_marginBottom="10sp"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -85,7 +85,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
-                android:background="@drawable/step5"
+                android:background="@drawable/basic4"
                 android:layout_marginBottom="10sp"/>
             <TextView
                 android:layout_width="wrap_content"
