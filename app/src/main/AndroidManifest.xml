@@ -17,6 +17,9 @@
         android:theme="@style/Theme.ZenFlow"
         tools:targetApi="31">
         <activity
+            android:name=".basic_prepare"
+            android:exported="false" />
+        <activity
             android:name=".prepare_meditation"
             android:exported="false" />
         <activity

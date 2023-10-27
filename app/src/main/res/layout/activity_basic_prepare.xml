@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".prepare_meditation"
+    android:background="@drawable/meditation">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ForEditText"
+        android:orientation="horizontal"
+        android:padding="15sp">
+
+        <ImageView
+            android:id="@+id/setting_back_genera"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/qwekwe"
+            />
+
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:fontFamily="@font/gabriela"
+            android:gravity="center"
+            android:text="Подготовка к медитации"
+            android:textColor="@color/WhiteText"
+            android:textSize="26sp" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="#CCE4FFDF"
+            android:padding="10sp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:background="@drawable/step2"
+                android:layout_marginBottom="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginBottom="10sp"
+                android:text="@string/string_basic1"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:background="@drawable/step3"
+                android:layout_marginBottom="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/string_basic2"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:background="@drawable/step4"
+                android:layout_marginBottom="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/string_basic3"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:background="@drawable/step5"
+                android:layout_marginBottom="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/string_basic4"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:background="@drawable/step1"
+                android:layout_marginBottom="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/string_basic5"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:background="@drawable/step6"
+                android:layout_marginBottom="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/string_basic6"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:background="@drawable/step6"
+                android:layout_marginBottom="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/string_basic7"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="250dp"
+                android:background="@drawable/step6"
+                android:layout_marginBottom="10sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/string_basic8"/>
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>
