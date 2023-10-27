@@ -22,7 +22,7 @@ class BookAdapter(var items: List<Book>, val context:Context) : RecyclerView.Ada
 
         var imageID = context.resources.getIdentifier(
             items[position].Image,
-            "drawble",
+            "drawable",
             context.packageName
         )
 
