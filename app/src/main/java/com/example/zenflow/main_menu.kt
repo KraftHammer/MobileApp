@@ -41,7 +41,7 @@ class main_menu : AppCompatActivity() {
             startActivity(intent)
         }
         btn_lit.setOnClickListener{
-            val intent = Intent(this, setting_main_window::class.java)
+            val intent = Intent(this, book_main::class.java)
             startActivity(intent)
         }
     }

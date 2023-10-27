@@ -6,10 +6,10 @@ import org.json.JSONObject
 
 class getWeather(val API:String, val city:String){
 
-    val link:String = "https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$API"
+    val link = "https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$API"
     val jsonObj = JSONObject(link)
 
-    val main= jsonObj.getJSONObject("main")
+    val main = jsonObj.getJSONArray("main").getJSONObject(0)
+    val temp = main.getJSONObject("temp").toString()
 
-     val temp = main.getString("temp")
 }

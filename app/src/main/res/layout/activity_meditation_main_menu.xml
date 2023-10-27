@@ -16,7 +16,7 @@
         android:padding="15sp">
 
         <ImageView
-            android:id="@+id/imageButton"
+            android:id="@+id/meditation_back"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:src="@drawable/qwekwe"
@@ -34,44 +34,93 @@
             android:text="Медитация"
             android:textColor="@color/WhiteText"
             android:textSize="26sp" />
+
     </LinearLayout>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background ="@drawable/radius_for_linearlayout"
-            android:backgroundTint="#CCE4FFDF"
-            android:layout_marginTop="40sp"
-            android:layout_marginRight="60sp"
-            android:layout_marginLeft="60sp"
-            android:layout_marginBottom="150sp"
+            android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <ImageView
-                android:id="@+id/imageView4"
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                tools:srcCompat="@tools:sample/avatars" />
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="40sp"
+                android:layout_marginRight="60sp"
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/button7"
-                android:layout_marginTop="10sp"
-                android:layout_marginBottom="30sp"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:paddingTop="15sp"
-                android:paddingBottom="15sp"
-                android:paddingLeft="40sp"
-                android:paddingRight="40sp"
-                android:fontFamily="@font/gabriela"
-                android:textColor="@color/WhiteText"
-                android:backgroundTint="@color/ForEditText"
-                android:background="@drawable/radius_for_button"
-                android:layout_gravity="center"
-                android:text="Основы\nмедитации"
-                android:textAllCaps="false"/>
+                android:background="@drawable/radius_for_linearlayout"
+                android:backgroundTint="#CCE4FFDF"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    tools:srcCompat="@drawable/meditation_lamp" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_to_medi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10sp"
+                    android:layout_marginBottom="30sp"
+                    android:background="@drawable/radius_for_button"
+                    android:backgroundTint="@color/ForEditText"
+                    android:fontFamily="@font/gabriela"
+                    android:paddingLeft="40sp"
+                    android:paddingTop="15sp"
+                    android:paddingRight="40sp"
+                    android:paddingBottom="15sp"
+                    android:text="Основы\nмедитации"
+                    android:textAllCaps="false"
+                    android:textColor="@color/WhiteText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="60sp"
+                android:layout_marginTop="40sp"
+                android:layout_marginRight="60sp"
+                android:layout_marginBottom="150sp"
+                android:background="@drawable/radius_for_linearlayout"
+                android:backgroundTint="#CCE4FFDF"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imageView5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30sp"
+                    tools:srcCompat="@drawable/meditation_pract" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_to_pract"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30sp"
+                    android:layout_marginBottom="30sp"
+                    android:background="@drawable/radius_for_button"
+                    android:backgroundTint="@color/ForEditText"
+                    android:fontFamily="@font/gabriela"
+                    android:paddingLeft="40sp"
+                    android:paddingTop="15sp"
+                    android:paddingRight="40sp"
+                    android:paddingBottom="15sp"
+                    android:text="Практика"
+                    android:textAllCaps="false"
+                    android:textColor="@color/WhiteText" />
+            </LinearLayout>
+
         </LinearLayout>
     </ScrollView>
 

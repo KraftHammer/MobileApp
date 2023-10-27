@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#CCE4FFDF"
+    android:layout_marginTop="15sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="15sp">
+
+        <TextView
+            android:id="@+id/title_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5sp"
+            android:layout_marginBottom="15sp"
+            android:textSize="16sp"
+            android:layout_gravity="center"
+            android:text=""/>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingLeft="10sp"
+            android:paddingRight="10sp">
+
+            <ImageView
+                android:id="@+id/image_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <ScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/text_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="131dp"
+                    android:paddingLeft="15sp"
+                    android:paddingRight="10sp"
+                    android:paddingBottom="15sp"
+                    android:textSize="15sp" />
+                </ScrollView>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/radius_for_button"
+                    android:backgroundTint="@color/ForEditText"
+                    android:fontFamily="@font/aref_ruqaa"
+                    android:paddingLeft="30sp"
+                    android:paddingRight="30sp"
+                    android:textColor="@color/WhiteText"
+                    android:text="Читать"
+                    android:textAllCaps="false"
+                    android:textSize="20sp"
+                    />
+                <TextView
+                    android:id="@+id/url_book"
+                    android:layout_width="0sp"
+                    android:layout_height="0sp"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
