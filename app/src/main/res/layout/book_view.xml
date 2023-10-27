@@ -65,6 +65,11 @@
                     android:textAllCaps="false"
                     android:textSize="20sp"
                     />
+                <TextView
+                    android:id="@+id/url_book"
+                    android:layout_width="0sp"
+                    android:layout_height="0sp"
+                    />
 
             </LinearLayout>
         </LinearLayout>
