@@ -1,6 +1,7 @@
 package com.example.zenflow
 
 
+import android.app.Notification
 import android.content.Intent
 import android.media.Image
 import androidx.appcompat.app.AppCompatActivity
@@ -8,9 +9,11 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.app.NotificationCompat
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
 import kotlinx.coroutines.async
+import kotlinx.coroutines.channels.Channel
 import org.json.JSONObject
 import java.net.URL
 
@@ -34,12 +37,12 @@ class main_menu : AppCompatActivity() {
 
         val weatherInfo: TextView = findViewById(R.id.textWeather)
 
-        GlobalScope.async(Dispatchers.Default) {
-           val ApiResponse = URL(url).readText()
+        //GlobalScope.async(Dispatchers.Default) {
+           //val ApiResponse = URL(url).readText()
 
-            val weather = JSONObject(ApiResponse).getJSONObject("main")
-            val desc = weather.getString("temp")
-        }
+           // val weather = JSONObject(ApiResponse).getJSONObject("main")
+           // val desc = weather.getString("temp")
+        //}
 
         btn_tomedi.setOnClickListener {
             val intent = Intent(this, meditation_main_menu::class.java)
@@ -66,4 +69,13 @@ class main_menu : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        //var builder = NotificationCompat.Builder(this, "CHANNEL_ID")
+        //    .setContentText("qwe")
+         //   .setContentText("qwe")
+         //   .setPriority(NotificationCompat.PRIORITY_DEFAULT)
+    }
+
 }
