@@ -17,8 +17,14 @@
         android:theme="@style/Theme.ZenFlow"
         tools:targetApi="31">
         <activity
-            android:name=".easy_level_meditation"
-            android:exported="false" />
+            android:name=".technic_meditation"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".prepare"
             android:exported="false" />
@@ -74,15 +80,14 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="ZenFlow">
+
+        </activity>
         <activity
             android:name=".main_menu"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false" >
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".registration"
@@ -91,7 +96,9 @@
             android:theme="@style/Theme.ZenFlow" />
         <activity
             android:name=".screensaver"
-            android:exported="false"></activity>
+            android:exported="false">
+
+        </activity>
 
         <meta-data
             android:name="preloaded_fonts"

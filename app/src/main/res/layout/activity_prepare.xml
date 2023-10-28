@@ -100,43 +100,13 @@
                 android:backgroundTint="@color/ForEditText"
                 android:fontFamily="@font/gabriela"
                 android:padding="15sp"
-                android:text="Начальный уровень медтации"
+                android:text="Техники для начинающих"
                 android:textAllCaps="false"
                 android:textColor="@color/WhiteText"
                 android:textSize="20sp" />
 
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_5"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Средний уровень медтации"
-                android:textSize="20sp"
-                android:layout_marginTop="15sp"
-                android:layout_marginLeft="30sp"
-                android:layout_marginRight="30sp"
-                android:textColor="@color/WhiteText"
-                android:padding="15sp"
-                android:fontFamily="@font/gabriela"
-                android:textAllCaps="false"
-                android:backgroundTint="@color/ForEditText"
-                android:background="@drawable/radius_for_button"
-                />
-            <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btn_6"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Средний уровень медтации"
-                android:textSize="20sp"
-                android:layout_marginTop="15sp"
-                android:layout_marginLeft="30sp"
-                android:layout_marginRight="30sp"
-                android:textColor="@color/WhiteText"
-                android:padding="15sp"
-                android:fontFamily="@font/gabriela"
-                android:textAllCaps="false"
-                android:backgroundTint="@color/ForEditText"
-                android:background="@drawable/radius_for_button"
-                />
+
+
         </LinearLayout>
 
     </LinearLayout>
