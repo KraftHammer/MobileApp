@@ -77,9 +77,10 @@
                 android:textSize="30sp"
                 android:fontFamily="@font/gabriela"/>
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
+                android:layout_gravity="center"
                 android:layout_height="250dp"
-                android:background=""
+                android:background="@drawable/chikung"
                 android:layout_marginBottom="10sp"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -95,9 +96,10 @@
                 android:textSize="30sp"
                 android:fontFamily="@font/gabriela"/>
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="250dp"
+                android:layout_gravity="center"
                 android:layout_height="250dp"
-                android:background=""
+                android:background="@drawable/polnota_soz"
                 android:layout_marginBottom="10sp"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -109,13 +111,14 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:gravity="center"
-                android:text=""
+                android:text="Медитация для открытия третьего глаза"
                 android:textSize="30sp"
                 android:fontFamily="@font/gabriela"/>
             <ImageView
-                android:layout_width="wrap_content"
+                android:layout_width="260dp"
+                android:layout_gravity="center"
                 android:layout_height="250dp"
-                android:background="Медитация для открытия третьего глаза"
+                android:background="@drawable/third_eye"
                 android:layout_marginBottom="10sp"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -132,8 +135,8 @@
                 android:fontFamily="@font/gabriela"/>
             <ImageView
                 android:layout_width="wrap_content"
-                android:layout_height="250dp"
-                android:background=""
+                android:layout_height="200dp"
+                android:background="@drawable/view_eye"
                 android:layout_marginBottom="10sp"/>
             <TextView
                 android:layout_width="wrap_content"
