@@ -54,7 +54,7 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
-                android:background="@drawable/basic2"
+                android:background="@drawable/medyourlive1"
                 android:layout_marginBottom="10sp"/>
             <TextView
                 android:layout_width="wrap_content"
@@ -62,86 +62,75 @@
                 android:textSize="20sp"
                 android:layout_marginBottom="10sp"
                 android:fontFamily="@font/gabriela"
-                android:text="@string/string_basic1"/>
+                android:text="@string/string_yourlive1"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
-                android:background="@drawable/basic1"
+                android:background="@drawable/medyourlive2"
                 android:layout_marginBottom="10sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:fontFamily="@font/gabriela"
-                android:text="@string/string_basic2"/>
+                android:text="@string/string_yourlive2"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
-                android:background="@drawable/basic3"
+                android:background="@drawable/medyourlive3"
                 android:layout_marginBottom="10sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:fontFamily="@font/gabriela"
-                android:text="@string/string_basic4"/>
+                android:text="@string/string_yourlive3"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
-                android:background="@drawable/basic4"
+                android:background="@drawable/medyourlive4"
                 android:layout_marginBottom="10sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:fontFamily="@font/gabriela"
-                android:text="@string/string_basic4"/>
+                android:text="@string/string_yourlive4"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
-                android:background="@drawable/basic5"
+                android:background="@drawable/medyourlive5"
                 android:layout_marginBottom="10sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:fontFamily="@font/gabriela"
-                android:text="@string/string_basic5"/>
+                android:text="@string/string_yourlive5"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
-                android:background="@drawable/basic6"
+                android:background="@drawable/medyourlive6"
                 android:layout_marginBottom="10sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:fontFamily="@font/gabriela"
-                android:text="@string/string_basic6"/>
+                android:text="@string/string_yourlive6"/>
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="250dp"
-                android:background="@drawable/basic7"
+                android:background="@drawable/medyourlive7"
                 android:layout_marginBottom="10sp"/>
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:fontFamily="@font/gabriela"
-                android:text="@string/string_basic7"/>
-            <ImageView
-                android:layout_width="wrap_content"
-                android:layout_height="250dp"
-                android:background="@drawable/basic8"
-                android:layout_marginBottom="10sp"/>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="20sp"
-                android:fontFamily="@font/gabriela"
-                android:text="@string/string_basic8"/>
-        </LinearLayout>
+                android:text="@string/string_yourlive7"/>
 
+        </LinearLayout>
 
     </ScrollView>
 
