@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.zenflow">
 
@@ -18,6 +17,9 @@
         android:theme="@style/Theme.ZenFlow"
         tools:targetApi="31">
         <activity
+            android:name=".easy_level_meditation"
+            android:exported="false" />
+        <activity
             android:name=".prepare"
             android:exported="false" />
         <activity
@@ -32,11 +34,7 @@
         <activity
             android:name=".book_main"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
         <activity
             android:name=".meditation_main_menu"
@@ -79,7 +77,13 @@
             android:exported="false" />
         <activity
             android:name=".main_menu"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".registration"
             android:exported="false"
@@ -87,9 +91,7 @@
             android:theme="@style/Theme.ZenFlow" />
         <activity
             android:name=".screensaver"
-            android:exported="false">
-
-        </activity>
+            android:exported="false"></activity>
 
         <meta-data
             android:name="preloaded_fonts"
