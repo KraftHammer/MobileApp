@@ -17,10 +17,11 @@
         android:theme="@style/Theme.ZenFlow"
         tools:targetApi="31">
         <activity
+            android:name=".music_med"
+            android:exported="false" />
+        <activity
             android:name=".technic_meditation"
             android:exported="true" />
-
-       >
         <activity
             android:name=".prepare"
             android:exported="false" />
@@ -35,9 +36,7 @@
             android:exported="false" />
         <activity
             android:name=".book_main"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".meditation_main_menu"
             android:exported="false" />
@@ -76,15 +75,10 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="false"
-            >
-
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".main_menu"
-            android:exported="false" >
-
-        </activity>
+            android:exported="false"></activity>
         <activity
             android:name=".registration"
             android:exported="false"
