@@ -9,6 +9,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.core.app.NotificationCompat
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.GlobalScope
@@ -23,9 +24,9 @@ class main_menu : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main_menu)
 
-        val key:String = ""
+        val key:String = "beff1410e1ce24a8d3f42b0378031768"
         val city:String = "Barnaul"
-        val url:String = ""
+        val url:String = "https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$key"
 
 
         val btn_tomedi: Button = findViewById(R.id.Main_menu_tomeditation)
@@ -37,12 +38,19 @@ class main_menu : AppCompatActivity() {
 
         val weatherInfo: TextView = findViewById(R.id.textWeather)
 
-        //GlobalScope.async(Dispatchers.Default) {
-           //val ApiResponse = URL(url).readText()
+        try {
+            GlobalScope.async(Dispatchers.Default) {
+                val ApiResponse = URL(url).readText()
 
-           // val weather = JSONObject(ApiResponse).getJSONObject("main")
-           // val desc = weather.getString("temp")
-        //}
+                val weather = JSONObject(ApiResponse).getJSONObject("main")
+                val desc = weather.getString("temp")
+
+
+            }
+
+        } catch(ex: Exception){
+            Toast.makeText(this, "$ex", Toast.LENGTH_SHORT).show()
+        }
 
         btn_tomedi.setOnClickListener {
             val intent = Intent(this, meditation_main_menu::class.java)
