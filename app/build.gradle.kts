@@ -5,12 +5,12 @@ plugins {
 
 android {
     namespace = "com.example.zenflow"
-    compileSdk = 33
+    compileSdk = 34
 
     defaultConfig {
         applicationId = "com.example.zenflow"
         minSdk = 29
-        targetSdk = 33
+        targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
@@ -39,7 +39,7 @@ android {
 }
 
 dependencies {
-
+    implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.1.1")
     implementation ("com.squareup.okhttp3:okhttp:4.9.0")
     implementation ("com.squareup.okhttp3:logging-interceptor:4.9.0")
     implementation ("com.squareup.moshi:moshi:1.15.0")
