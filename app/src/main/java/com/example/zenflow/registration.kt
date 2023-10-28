@@ -22,7 +22,7 @@ class registration : AppCompatActivity() {
         val Btn_auth: TextView = findViewById(R.id.Reg_btn_to_aut)
 
         Btn_auth.setOnClickListener {
-            var intent = Intent(this, main_menu::class.java)
+            var intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
 
