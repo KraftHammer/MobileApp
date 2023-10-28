@@ -70,7 +70,7 @@
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/gabriela"
                     android:gravity="center"
-                    android:text="Совет дня"
+                    android:text="Советы дня"
                     android:textColor="@color/WhiteText"
                     android:textSize="30sp" />
 
@@ -85,13 +85,12 @@
                     android:padding="10sp">
 
                     <TextView
-                        android:id="@+id/textView5"
+                        android:id="@+id/textsovet"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="Κoгдa тeбe плoхo — пpиcлушaйcя к пpиpoдe. Тишинa миpa уcпoкaивaeт лучшe, чeм миллиoны нeнужных cлoв."
-
+                        android:text=""
                         android:textColor="@color/WhiteText"
-                        android:textSize="16sp" />
+                        android:textSize="18sp" />
 
                     <LinearLayout
                         android:layout_width="match_parent"
