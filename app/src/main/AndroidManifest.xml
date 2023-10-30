@@ -21,7 +21,7 @@
             android:exported="false" />
         <activity
             android:name=".technic_meditation"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".prepare"
             android:exported="false" />
@@ -36,7 +36,7 @@
             android:exported="false" />
         <activity
             android:name=".book_main"
-            android:exported="true"></activity>
+            android:exported="false"></activity>
         <activity
             android:name=".meditation_main_menu"
             android:exported="false" />
