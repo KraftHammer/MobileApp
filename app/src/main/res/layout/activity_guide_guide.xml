@@ -16,7 +16,7 @@
         android:padding="15sp">
 
         <ImageView
-            android:id="@+id/guide_back"
+            android:id="@+id/guide_guide_Back"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:src="@drawable/qwekwe"
@@ -24,24 +24,40 @@
 
 
         <TextView
-            android:id="@+id/textView8"
+            android:id="@+id/guide_guide_Title"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_weight="1"
             android:fontFamily="@font/gabriela"
             android:gravity="center"
-            android:text="Справочник"
+            android:text=""
             android:textColor="@color/WhiteText"
             android:textSize="26sp" />
-    </LinearLayout>
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/guide_RecycleView"
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#CCE4FFDF"
+        android:layout_margin="15sp"
+        android:padding="20sp">
+        <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-    </ScrollView>
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/guide_guide_Text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="@font/aref_ruqaa"
+                android:textColor="@color/BlackText"
+                android:text="" />
+        </ScrollView>
+    </LinearLayout>
+
+
 </LinearLayout>

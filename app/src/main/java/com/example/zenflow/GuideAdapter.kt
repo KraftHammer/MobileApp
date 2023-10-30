@@ -34,6 +34,14 @@ class GuideAdapter (var guide_items: List<Guide>, val context: Context) : Recycl
         holder.title.text = guide_items[position].gudieTtitle
         holder.desc.text = guide_items[position].guideDesc
 
+        holder.btn.setOnClickListener {
+            val intent = Intent(context, guide_guide::class.java)
 
+            intent.putExtra("guide_guide_Title", guide_items[position].gudieTtitle)
+            intent.putExtra("guide_guide_Text", guide_items[position].guideText)
+
+
+            context.startActivity(intent)
+        }
     }
 }
