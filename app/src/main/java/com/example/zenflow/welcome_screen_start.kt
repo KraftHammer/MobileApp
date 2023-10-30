@@ -13,10 +13,9 @@ class welcome_screen_start : AppCompatActivity() {
         setContentView(R.layout.activity_welcome_screen_start)
 
         var alpha_in = AnimationUtils.loadAnimation(this, R.anim.alpha_in)
-        var alpha_out = AnimationUtils.loadAnimation(this, R.anim.alpha_out)
 
         var textView7: TextView = findViewById<TextView>(R.id.textView7)
-
+        var textView2:TextView= findViewById<TextView>(R.id.textView2)
         var button: Button = findViewById<Button>(R.id.button)
 
 
@@ -25,6 +24,10 @@ class welcome_screen_start : AppCompatActivity() {
 
         button.setOnClickListener {
             val intent = Intent(this, welcome_screen_test1::class.java)
+            startActivity(intent)
+        }
+        textView2.setOnClickListener {
+            val intent= Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }

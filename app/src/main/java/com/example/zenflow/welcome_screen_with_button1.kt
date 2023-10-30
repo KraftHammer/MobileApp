@@ -13,7 +13,6 @@ class welcome_screen_with_button1 : AppCompatActivity() {
         setContentView(R.layout.activity_welcome_screen_with_button1)
 
         var alpha_in = AnimationUtils.loadAnimation(this, R.anim.alpha_in)
-        var alpha_out = AnimationUtils.loadAnimation(this, R.anim.alpha_out)
 
         var textView7: TextView = findViewById<TextView>(R.id.textView7)
         var textView6: TextView = findViewById<TextView>(R.id.textView6)

@@ -16,46 +16,50 @@
         android:layout_marginRight="50sp"
         android:fontFamily="@font/gabriela"
         android:textColor="@color/WhiteText"
-        android:layout_marginBottom="350sp"
+        android:layout_marginBottom="300sp"
         android:gravity="center"/>
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:background="#714980"
+        android:background="#CC714980"
         >
 
         <RadioButton
             android:id="@+id/radioButton"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Нет, не занимался"
+            android:text="1.Нет, не занимался"
             android:textSize="26sp"
             android:textColor="@color/WhiteText"
-            android:layoutDirection="rtl"/>
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="10dp"/>
+            android:layoutDirection="rtl"
+            android:button="@drawable/custom_icon"
+            android:fontFamily="@font/gabriela"
+            android:layout_marginBottom="10dp"/>
+
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Редко"
+            android:text="2.Редко"
+            android:fontFamily="@font/gabriela"
             android:textSize="26sp"
             android:textColor="@color/WhiteText"
-            android:layoutDirection="rtl"/>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="10dp"/>
+            android:layoutDirection="rtl"
+            android:button="@drawable/custom_icon"
+            android:layout_marginBottom="10dp"/>
+
         <RadioButton
             android:id="@+id/radioButton3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Довольно часто"
+            android:text="3.Довольно часто"
             android:textSize="26sp"
             android:textColor="@color/WhiteText"
-            android:layoutDirection="rtl"/>
+            android:layoutDirection="rtl"
+            android:button="@drawable/custom_icon"
+            android:fontFamily="@font/gabriela"/>
 
     </LinearLayout>
 
