@@ -4,6 +4,7 @@ package com.example.zenflow
 import android.app.Notification
 import android.content.Intent
 import android.media.Image
+import android.os.AsyncTask
 import android.os.Build
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -18,8 +19,12 @@ import kotlinx.coroutines.async
 import kotlinx.coroutines.channels.Channel
 import org.json.JSONObject
 import java.net.URL
+import java.nio.charset.Charset
 
 class main_menu : AppCompatActivity() {
+
+    val key: String = "beff1410e1ce24a8d3f42b0378031768"
+    val city: String = "Barnaul"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -34,11 +39,6 @@ class main_menu : AppCompatActivity() {
             "Справляйтесь со стрессом, отложите все срочные дела и займитесь чем-то, что вам доставляет удовольствие.")
         val score: Int = (0..6).random()
 
-
-        val key: String = "beff1410e1ce24a8d3f42b0378031768"
-        val city: String = "Barnaul"
-        val url: String = "https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$key"
-
         val btn_tomedi: Button = findViewById(R.id.Main_menu_tomeditation)
         val btn_spr: Button = findViewById(R.id.Main_menu_tosprav)
         val btn_ach: Button = findViewById(R.id.Main_menu_toach)
@@ -48,20 +48,7 @@ class main_menu : AppCompatActivity() {
 
         sovet.text = number[score]
 
-        val weatherInfo: TextView = findViewById(R.id.textWeather)
-
-        try {
-            GlobalScope.async(Dispatchers.Default) {
-                val ApiResponse = URL(url).readText()
-
-                val weather = JSONObject(ApiResponse).getJSONObject("main")
-                val desc = weather.getString("temp")
-
-                weatherInfo.text = "qwe"
-            }
-        } catch (ex: Exception) {
-            Toast.makeText(this, "$ex", Toast.LENGTH_SHORT).show()
-        }
+        weatherTask().execute()
 
         btn_tomedi.setOnClickListener {
             val intent = Intent(this, meditation_main_menu::class.java)
@@ -83,6 +70,41 @@ class main_menu : AppCompatActivity() {
         btn_lit.setOnClickListener {
             val intent = Intent(this, book_main::class.java)
             startActivity(intent)
+        }
+
+
+    }
+    inner class weatherTask() : AsyncTask<String, Void, String>()
+    {
+        override fun onPreExecute() {
+            super.onPreExecute()
+
+        }
+
+        override fun doInBackground(vararg p0: String?): String? {
+            var response:String?
+            try{
+                response = URL("https://api.openweathermap.org/data/2.5/weather?q=$city&appid=$key&units=metric")
+                    .readText(Charsets.UTF_8)
+            }
+            catch (e:Exception){
+                response = null
+            }
+            return response
+        }
+
+        override fun onPostExecute(result: String?) {
+            super.onPostExecute(result)
+            try {
+                val jsonObj = JSONObject(result)
+                val main = jsonObj.getJSONObject("main")
+                val temp = main.getString("temp")
+
+                findViewById<TextView>(R.id.textWeather).text = Math.round(temp.toDouble()).toString()
+            }
+            catch (e:Exception){
+
+            }
         }
     }
 }
