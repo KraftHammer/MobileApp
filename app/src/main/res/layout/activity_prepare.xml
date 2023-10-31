@@ -15,7 +15,7 @@
             android:padding="15sp">
 
             <ImageView
-                android:id="@+id/setting_back_menu"
+                android:id="@+id/prepare_back"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
                 android:src="@drawable/qwekwe"
@@ -30,7 +30,7 @@
                 android:layout_weight="1"
                 android:fontFamily="@font/gabriela"
                 android:gravity="center"
-                android:text="Практика"
+                android:text="Медитация"
                 android:textColor="@color/WhiteText"
                 android:textSize="26sp" />
         </LinearLayout>

@@ -51,11 +51,11 @@ class main_menu : AppCompatActivity() {
         weatherTask().execute()
 
         btn_tomedi.setOnClickListener {
-            val intent = Intent(this, meditation_main_menu::class.java)
+            val intent = Intent(this, prepare::class.java)
             startActivity(intent)
         }
         btn_spr.setOnClickListener {
-            val intent = Intent(this, setting_main_window::class.java)
+            val intent = Intent(this, guide_main::class.java)
             startActivity(intent)
         }
         btn_ach.setOnClickListener {
@@ -100,7 +100,7 @@ class main_menu : AppCompatActivity() {
                 val main = jsonObj.getJSONObject("main")
                 val temp = main.getString("temp")
 
-                findViewById<TextView>(R.id.textWeather).text = Math.round(temp.toDouble()).toString()
+                findViewById<TextView>(R.id.textWeather).text = Math.round(temp.toDouble()).toString() + " °C"
             }
             catch (e:Exception){
 

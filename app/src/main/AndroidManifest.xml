@@ -18,7 +18,10 @@
         android:theme="@style/Theme.ZenFlow"
         tools:targetApi="31">
         <activity
-            android:name=".music_med"
+            android:name=".guide_guide"
+            android:exported="false" />
+        <activity
+            android:name=".guide_main"
             android:exported="false" />
         <activity
             android:name=".technic_meditation"
@@ -38,15 +41,7 @@
         <activity
             android:name=".book_main"
             android:exported="true">
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
-
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
-        <activity
-            android:name=".meditation_main_menu"
-            android:exported="false" />
         <activity
             android:name=".setting_general_setting"
             android:exported="false" />
@@ -85,7 +80,13 @@
             android:exported="false" />
         <activity
             android:name=".main_menu"
-            android:exported="false" />
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".registration"
             android:exported="false"
@@ -93,7 +94,7 @@
             android:theme="@style/Theme.ZenFlow" />
         <activity
             android:name=".screensaver"
-            android:exported="false">
+            android:exported="true">
 
         </activity>
 

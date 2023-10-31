@@ -45,7 +45,7 @@ class MainActivity : AppCompatActivity() {
                     Login.text.clear()
                     Password.text.clear()
 
-                    val intent = Intent(this, main_menu::class.java)
+                    val intent = Intent(this, welcome_screen_with_button1::class.java)
                     startActivity(intent)
                 }
                 else{

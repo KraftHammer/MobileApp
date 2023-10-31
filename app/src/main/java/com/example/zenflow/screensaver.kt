@@ -33,7 +33,7 @@ class screensaver : AppCompatActivity() {
             linearLayout2.startAnimation(upDown)
             textView2.startAnimation(downUp)
 
-            val intent = Intent(this, welcome_screen_with_button1::class.java)
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
 
         }, 3000)

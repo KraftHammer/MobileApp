@@ -21,6 +21,8 @@ class registration : AppCompatActivity() {
         val Btn: Button = findViewById(R.id.Reg_btn_to_bd)
         val Btn_auth: TextView = findViewById(R.id.Reg_btn_to_aut)
 
+        val intent = Intent(this, main_menu::class.java)
+
         Btn_auth.setOnClickListener {
             var intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
@@ -43,7 +45,11 @@ class registration : AppCompatActivity() {
                 val db = DbHelper(this,null)
 
                 db.addUser(user)
+
                 errortoast(this, "Пользователь добавлен", Toast.LENGTH_SHORT).show()
+
+                startActivity(intent)
+
                 Login.text.clear()
                 Password.text.clear()
                 RepeatPassword.text.clear()
