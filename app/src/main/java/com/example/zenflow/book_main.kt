@@ -56,6 +56,7 @@ class book_main : AppCompatActivity() {
             "Эта книга – руководство по созданию счастливой судьбы С ее помощью можно изменить жизнь, наполнить ее творчеством, радостью и счастьем, открыть новые пространства деятельности, реализовать свои таланты и способности",
             "https://sharlib.com/read_266540-1"))
 
+
         itemsList.layoutManager = LinearLayoutManager(this)
         itemsList.adapter = BookAdapter(item123, this)
 

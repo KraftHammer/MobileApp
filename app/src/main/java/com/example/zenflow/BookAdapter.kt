@@ -35,9 +35,8 @@ class BookAdapter(var items: List<Book>, val context:Context) : RecyclerView.Ada
 
         holder.btn.setOnClickListener {
             try {
-                val intent: Intent =
-                    Intent(Intent.ACTION_VIEW, Uri.parse(items[position].url))
-                    context.startActivity(intent)
+                val intent: Intent = Intent(Intent.ACTION_VIEW, Uri.parse(items[position].url))
+                context.startActivity(intent)
             }
             catch (qwe: Exception){
                 Toast.makeText(context, items[position].url, Toast.LENGTH_SHORT).show()

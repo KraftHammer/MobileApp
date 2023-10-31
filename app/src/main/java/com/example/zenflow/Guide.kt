@@ -1,4 +1,4 @@
 package com.example.zenflow
 
-class Guide(var Title: String, var Description: String, var Image: String) {
+class Guide(var gudieTtitle: String, var guideDesc: String, var guideText: String) {
 }
