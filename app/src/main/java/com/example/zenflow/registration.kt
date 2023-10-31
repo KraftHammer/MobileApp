@@ -24,7 +24,7 @@ class registration : AppCompatActivity() {
         val intent = Intent(this, main_menu::class.java)
 
         Btn_auth.setOnClickListener {
-            var intent = Intent(this, MainActivity::class.java)
+            var intent = Intent(this, welcome_screen_with_button1::class.java)
             startActivity(intent)
         }
 
